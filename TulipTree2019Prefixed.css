@@ -1,0 +1,773 @@
+html {
+    scroll-behavior: smooth; }
+  
+  @media screen and (min-aspect-ratio: 3 / 2), (max-aspect-ratio: 16 / 9) {
+    body#mainPage {
+      width: 100vw;
+      height: 100vh;
+      min-height: 1000px;
+      margin: 0;
+      padding: 0;
+      position: relative;
+      overflow-x: hidden;
+      background-color: #0f0e20;
+      font-family: poiret one, sans-serif; }
+      body#mainPage #backgroundImage {
+        width: 55vw;
+        height: 400vh;
+        z-index: 3;
+        top: 0;
+        right: 0vw;
+        position: absolute; }
+        body#mainPage #backgroundImage .imgContainer {
+          width: 55vw;
+          height: 100vh;
+          position: relative; }
+        body#mainPage #backgroundImage .image {
+          width: 42vh;
+          height: 42vh;
+          position: relative;
+          background-size: cover;
+          background-position: center;
+          box-shadow: 0 0 15px -5px black; }
+        body#mainPage #backgroundImage .imageBorder {
+          width: 55vw;
+          height: 50vh;
+          position: relative;
+          display: flex;
+          justify-content: space-evenly;
+          align-items: center;
+          background-color: lightgray; }
+      body#mainPage #img1 {
+        background-image: url(TTCPictures/IMG_3646.jpg); }
+      body#mainPage #img2 {
+        background-image: url(TTCPictures/IMG_4167.jpg); }
+      body#mainPage #img3 {
+        background-image: url(TTCPictures/IMG_3860.jpg); }
+      body#mainPage #img4 {
+        background-image: url(TTCPictures/IMG_3814.jpg); }
+      body#mainPage #img5 {
+        background-image: url(TTCPictures/IMG_4234.jpg);
+        background-position: top; }
+      body#mainPage #img6 {
+        background-image: url(TTCPictures/IMG_3597.jpg); }
+      body#mainPage #img7 {
+        background-image: url(TTCPictures/IMG_3823.jpg); }
+      body#mainPage #img8 {
+        background-image: url(TTCPictures/IMG_3437.jpg); }
+      body#mainPage #img9 {
+        background-image: url(TTCPictures/IMG_2581.jpg); }
+      body#mainPage #img10 {
+        background-image: url(TTCPictures/IMG_3826.jpg); }
+      body#mainPage #img11 {
+        background-image: url(TTCPictures/IMG_3866.jpg); }
+      body#mainPage #img12 {
+        background-image: url(TTCPictures/IMG_4056.jpg); }
+      body#mainPage #img13 {
+        background-image: url(TTCPictures/IMG_3858.jpg); }
+      body#mainPage #img14 {
+        background-image: url(TTCPictures/IMG_3798.jpg); }
+      body#mainPage #img15 {
+        background-image: url(TTCPictures/IMG_3779.jpg); }
+      body#mainPage #img16 {
+        background-image: url(TTCPictures/IMG_3784.jpg); }
+      body#mainPage #descriptionBackground {
+        width: 35vw;
+        height: 100vh;
+        z-index: 1;
+        box-sizing: border-box;
+        position: fixed;
+        left: 10vw;
+        top: 0;
+        color: white;
+        font-size: 16px;
+        text-indent: 2vw;
+        text-shadow: 1px 1px 0 #202020; }
+        body#mainPage #descriptionBackground #backgroundImage {
+          display: none; }
+        body#mainPage #descriptionBackground #homeButton {
+          position: absolute;
+          margin-top: 2vh;
+          z-index: 100;
+          opacity: 0;
+          text-decoration: none;
+          color: #ffcefc;
+          transform: translateX(-20vw); }
+          body#mainPage #descriptionBackground #homeButton:visited {
+            text-decoration: none;
+            color: #ffcefc; }
+        body#mainPage #descriptionBackground #homeButton.showHomeButton {
+          transform: translateX(0);
+          opacity: 1;
+          transition: 0.7s; }
+        body#mainPage #descriptionBackground .text {
+          width: 100%;
+          height: 100vh;
+          box-sizing: border-box;
+          padding-left: 2vw;
+          padding-right: 2vw;
+          position: absolute;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          opacity: 0;
+          transform: translateX(30vw);
+          transition: 0.5s; }
+        body#mainPage #descriptionBackground div.text.show {
+          opacity: 1;
+          transform: translateX(0);
+          transition: 0.5s; }
+        body#mainPage #descriptionBackground #aboutText {
+          top: 0; }
+          body#mainPage #descriptionBackground #aboutText .title {
+            padding-right: 5%;
+            display: flex;
+            cursor: pointer;
+            font-weight: bold; }
+          body#mainPage #descriptionBackground #aboutText .aboutContainers {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column; }
+            body#mainPage #descriptionBackground #aboutText .aboutContainers .aboutSubsections {
+              max-height: 0;
+              overflow: hidden;
+              transition: 0.5s; }
+            body#mainPage #descriptionBackground #aboutText .aboutContainers .aboutSubsections.showSubsections {
+              transition: 0.5s;
+              max-height: 60vh; }
+        body#mainPage #descriptionBackground #contactText {
+          text-align: center;
+          text-indent: 0; }
+          body#mainPage #descriptionBackground #contactText #contactInfo {
+            font-size: 25px; }
+          body#mainPage #descriptionBackground #contactText form input[type=text] {
+            width: 20vw;
+            min-width: 250px;
+            border: none;
+            border-bottom: 1px solid #e6e6e6;
+            padding: 10px;
+            margin-top: 3vh;
+            background-color: transparent;
+            font-family: open sans condensed, sans-serif;
+            font-size: 18px; }
+            body#mainPage #descriptionBackground #contactText form input[type=text]::placeholder {
+              color: #b9b9b9;
+              font-size: 18px; }
+            body#mainPage #descriptionBackground #contactText form input[type=text]:focus {
+              outline: none;
+              border-bottom: 1px solid gray; }
+          body#mainPage #descriptionBackground #contactText form input[type=submit] {
+            padding: calc(10px + (10) * (100vw - 768px) / (1920 - 768));
+            width: 100px;
+            border: none;
+            margin-top: 8vh;
+            background-color: #80dde4;
+            border-radius: 30px;
+            font-size: 18px;
+            font-family: open sans condensed, sans-serif;
+            cursor: pointer; }
+            body#mainPage #descriptionBackground #contactText form input[type=submit]:focus {
+              box-shadow: 0 0 15px -10px black;
+              outline: none;
+              -webkit-transform: translateY(-1px);
+              -ms-transform: translateY(-1px);
+              transform: translateY(-1px); }
+        body#mainPage #descriptionBackground #galleryText a {
+          font-size: 30px;
+          text-align: center; }
+          body#mainPage #descriptionBackground #galleryText a:link {
+            color: white;
+            text-decoration: none; }
+          body#mainPage #descriptionBackground #galleryText a:visited {
+            color: white;
+            text-decoration: none; }
+        body#mainPage #descriptionBackground #locationText #map {
+          width: 20vw;
+          height: 20vh;
+          background-color: white;
+          display: flex; }
+          body#mainPage #descriptionBackground #locationText #map iframe {
+            margin: auto; }
+        body#mainPage #descriptionBackground .downArrow {
+          width: 15px;
+          height: 15px;
+          border-left: 4px solid white;
+          border-bottom: 4px solid white;
+          transform: rotate(-45deg) translateY(20px); } }
+    @media screen and (min-aspect-ratio: 3 / 2) and (min-height: 700px), screen and (max-aspect-ratio: 16 / 9) and (min-height: 700px) {
+      body#mainPage #descriptionBackground {
+        font-size: calc(16px + 6 * (100vh - 700px) / (1200 - 700)); } }
+    @media screen and (min-aspect-ratio: 3 / 2) and (min-height: 1200px), screen and (max-aspect-ratio: 16 / 9) and (min-height: 1200px) {
+      body#mainPage #descriptionBackground {
+        font-size: 22px; } }
+  @media screen and (min-aspect-ratio: 3 / 2), (max-aspect-ratio: 16 / 9) {
+      body#mainPage #menu {
+        width: 10vw;
+        height: 100vh;
+        box-sizing: border-box;
+        padding-top: 20vh;
+        padding-bottom: 20vh;
+        z-index: 1;
+        position: fixed;
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #14142e; }
+        body#mainPage #menu #circleContainer {
+          width: 10vw;
+          height: 60vh;
+          z-index: 1;
+          position: absolute;
+          display: flex;
+          justify-content: center;
+          align-items: flex-start; }
+          body#mainPage #menu #circleContainer .circle {
+            width: 5vw;
+            height: 5vw;
+            border-radius: 5vw;
+            z-index: 2;
+            position: absolute;
+            transform: scale(0); }
+          body#mainPage #menu #circleContainer #AboutCircle {
+            background-color: gray;
+            top: 5%; }
+          body#mainPage #menu #circleContainer #LocationCircle {
+            background-color: #b13232;
+            top: 30%; }
+          body#mainPage #menu #circleContainer #GalleryCircle {
+            background-color: #3c6936;
+            top: 55%; }
+          body#mainPage #menu #circleContainer #ContactCircle {
+            background-color: #147c77;
+            top: 80%; }
+          body#mainPage #menu #circleContainer .grow {
+            transition: 1s ease-in-out;
+            transform: scale(42); }
+        body#mainPage #menu .menuItem {
+          width: 40px;
+          z-index: 100;
+          flex: 1;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          background-size: fill;
+          background-repeat: no-repeat;
+          background-position: center;
+          cursor: pointer; }
+          body#mainPage #menu .menuItem:hover {
+            animation: iconBounce 0.7s alternate infinite; }
+          body#mainPage #menu .menuItem .mobileMenuItem {
+            display: none; }
+        body#mainPage #menu #about {
+          background-image: url(TTCPictures/aboutIcon_gray.svg); }
+        body#mainPage #menu #location {
+          background-image: url(TTCPictures/mapIcon_gray.svg); }
+        body#mainPage #menu #gallery {
+          background-image: url(TTCPictures/galleryIcon_gray.svg); }
+        body#mainPage #menu #contact {
+          background-image: url(TTCPictures/mailIcon_gray.svg); }
+      body#mainPage #bigCircleContainer {
+        position: fixed;
+        width: 10vw;
+        height: 60vh;
+        top: 20vh;
+        z-index: -1;
+        display: flex;
+        justify-content: center; }
+        body#mainPage #bigCircleContainer .circle {
+          width: 5vw;
+          height: 5vw;
+          border-radius: 5vw;
+          position: absolute;
+          transform: scale(1); }
+        body#mainPage #bigCircleContainer #bigAboutCircle {
+          background-color: #4d4c48;
+          top: 5%; }
+        body#mainPage #bigCircleContainer #bigLocationCircle {
+          background-color: #6b1d1d;
+          top: 30%; }
+        body#mainPage #bigCircleContainer #bigGalleryCircle {
+          background-color: #274922;
+          top: 55%; }
+        body#mainPage #bigCircleContainer #bigContactCircle {
+          background-color: #005752;
+          top: 80%; }
+        body#mainPage #bigCircleContainer .grow {
+          transition: 1s ease-in-out;
+          transform: scale(42); }
+      body#mainPage #mobileTitle {
+        display: none; } }
+  @keyframes iconBounce {
+    0% {
+      transform: translateY(0); }
+    25% {
+      transform: translateY(-10px); }
+    50% {
+      transform: translateY(0); }
+    80% {
+      transform: translateY(0); } }
+  @media screen and (max-aspect-ratio: 3 / 2), (min-aspect-ratio: 16 / 9), (max-height: 700px) {
+    body#mainPage {
+      width: 100vw;
+      height: auto;
+      margin: 0;
+      padding: 0;
+      position: relative;
+      overflow-x: hidden;
+      background-color: #ececec;
+      font-family: poiret one, sans-serif; }
+      body#mainPage #backgroundImage {
+        display: none; }
+      body#mainPage #descriptionBackground {
+        width: 100vw;
+        max-width: 800px;
+        height: auto;
+        z-index: 1;
+        left: auto;
+        margin: auto;
+        box-sizing: border-box;
+        position: relative;
+        background-color: white;
+        font-size: 18px;
+        color: black;
+        text-indent: 2vw;
+        text-shadow: none; }
+        body#mainPage #descriptionBackground #backgroundImage {
+          display: block;
+          width: 100%;
+          height: auto;
+          z-index: 3;
+          position: relative; }
+          body#mainPage #descriptionBackground #backgroundImage .imgContainer {
+            width: 100%;
+            height: auto;
+            position: relative; }
+          body#mainPage #descriptionBackground #backgroundImage .image {
+            width: 90vw;
+            max-width: 300px;
+            height: 300px;
+            margin-top: 50px;
+            position: relative;
+            background-size: cover;
+            background-position: center;
+            box-shadow: 0 0 15px -5px black; }
+          body#mainPage #descriptionBackground #backgroundImage .imageBorder {
+            width: 100%;
+            height: auto;
+            position: relative;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            flex-wrap: wrap;
+            background-color: white; }
+        body#mainPage #descriptionBackground #homeButton {
+          display: none; }
+        body#mainPage #descriptionBackground .text {
+          width: 100%;
+          height: auto;
+          padding: 50px;
+          box-sizing: border-box;
+          position: relative;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          opacity: 1;
+          transform: translateX(0);
+          transition: 0.5s; }
+        body#mainPage #descriptionBackground div.text.show {
+          opacity: 1;
+          transform: translateX(0);
+          transition: 0.5s; }
+        body#mainPage #descriptionBackground #welcomeText {
+          display: none; }
+        body#mainPage #descriptionBackground #aboutText {
+          top: 0; }
+          body#mainPage #descriptionBackground #aboutText h2 {
+            display: none; }
+          body#mainPage #descriptionBackground #aboutText .title {
+            padding: 0;
+            display: flex;
+            cursor: pointer;
+            font-weight: bold; }
+          body#mainPage #descriptionBackground #aboutText .aboutContainers {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column; }
+            body#mainPage #descriptionBackground #aboutText .aboutContainers .aboutSubsections {
+              max-height: 0;
+              overflow: hidden;
+              transition: 0.5s; }
+            body#mainPage #descriptionBackground #aboutText .aboutContainers .aboutSubsections.showSubsections {
+              transition: 0.5s;
+              max-height: 800px; }
+        body#mainPage #descriptionBackground #contactText {
+          text-align: center;
+          text-indent: 0; }
+          body#mainPage #descriptionBackground #contactText #contactInfo {
+            font-size: 25px; }
+          body#mainPage #descriptionBackground #contactText form input[type=text] {
+            width: 20vw;
+            min-width: 220px;
+            border: none;
+            border-bottom: 1px solid #e6e6e6;
+            padding: 10px;
+            margin-top: 3vh;
+            background-color: transparent;
+            font-family: open sans condensed, sans-serif;
+            font-size: 20px; }
+            body#mainPage #descriptionBackground #contactText form input[type=text]::placeholder {
+              color: #b9b9b9;
+              font-size: 20px; }
+            body#mainPage #descriptionBackground #contactText form input[type=text]:focus {
+              outline: none;
+              border-bottom: 1px solid gray; }
+          body#mainPage #descriptionBackground #contactText form input[type=submit] {
+            padding: calc(10px + (10) * (100vw - 768px) / (1920 - 768));
+            width: 100px;
+            border: none;
+            margin-top: 8vh;
+            background-color: #80dde4;
+            border-radius: 30px;
+            font-size: 20px;
+            font-family: open sans condensed, sans-serif;
+            cursor: pointer; }
+            body#mainPage #descriptionBackground #contactText form input[type=submit]:focus {
+              box-shadow: 0 0 15px -10px black;
+              outline: none;
+              -webkit-transform: translateY(-1px);
+              -ms-transform: translateY(-1px);
+              transform: translateY(-1px); }
+        body#mainPage #descriptionBackground #galleryText a {
+          font-size: inherit;
+          text-align: center; }
+          body#mainPage #descriptionBackground #galleryText a:link {
+            color: black;
+            text-decoration: none; }
+          body#mainPage #descriptionBackground #galleryText a:visited {
+            color: black;
+            text-decoration: none; }
+        body#mainPage #descriptionBackground #locationText #map {
+          width: 70%;
+          min-width: 200px;
+          height: 300px;
+          background-color: whitesmoke;
+          box-shadow: 2px 2px 25px -20px black; }
+        body#mainPage #descriptionBackground .downArrow {
+          width: 15px;
+          height: 15px;
+          border-left: 4px solid #1d1d1d;
+          border-bottom: 4px solid #1d1d1d;
+          transform: rotate(-45deg) translateY(20px); } }
+    @media screen and (max-aspect-ratio: 3 / 2) and (min-width: 768px), screen and (min-aspect-ratio: 16 / 9) and (min-width: 768px), screen and (max-height: 700px) and (min-width: 768px) {
+      body#mainPage #descriptionBackground {
+        font-size: calc(18px + 8 * (100vw - 768px) / (1920 - 768)); } }
+    @media screen and (max-aspect-ratio: 3 / 2) and (min-width: 1920px), screen and (min-aspect-ratio: 16 / 9) and (min-width: 1920px), screen and (max-height: 700px) and (min-width: 1920px) {
+      body#mainPage #descriptionBackground {
+        font-size: 26px; } }
+  @media screen and (max-aspect-ratio: 3 / 2), (min-aspect-ratio: 16 / 9), (max-height: 700px) {
+      body#mainPage #mobileFooter {
+        width: 100vw;
+        height: 500px;
+        background-color: #9c9c9c; }
+      body#mainPage #mobileTitle {
+        width: auto;
+        height: auto;
+        display: block;
+        position: relative;
+        text-align: center; }
+      body#mainPage #menu {
+        padding: 0;
+        width: 100vw;
+        height: 70px;
+        top: 0;
+        box-sizing: border-box;
+        z-index: 10;
+        position: sticky;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        background-color: #14142e; }
+        body#mainPage #menu #circleContainer {
+          display: none; }
+        body#mainPage #menu .menuItem {
+          height: 40px;
+          width: 40px;
+          z-index: 100;
+          position: relative;
+          display: flex;
+          flex: none;
+          background-size: fill;
+          background-repeat: no-repeat;
+          background-position: center;
+          cursor: pointer; }
+          body#mainPage #menu .menuItem:hover {
+            animation: iconBounce 0.7s alternate infinite; }
+        body#mainPage #menu #about {
+          background-image: url(TTCPictures/aboutIcon_gray.svg); }
+        body#mainPage #menu #location {
+          background-image: url(TTCPictures/mapIcon_gray.svg); }
+        body#mainPage #menu #gallery {
+          background-image: url(TTCPictures/galleryIcon_gray.svg); }
+        body#mainPage #menu #contact {
+          background-image: url(TTCPictures/mailIcon_gray.svg); }
+        body#mainPage #menu #mobileMenuContainer {
+          width: 100%;
+          height: 100%;
+          position: absolute;
+          display: flex;
+          justify-content: space-evenly; }
+          body#mainPage #menu #mobileMenuContainer .mobileMenuItem {
+            width: 50px;
+            height: 100%;
+            z-index: 100;
+            top: 0;
+            left: 0;
+            position: relative;
+            display: block; }
+      body#mainPage #bigCircleContainer {
+        display: none; } }
+  body#galleryPage {
+    width: 100vw;
+    height: auto;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #ece6da; }
+    body#galleryPage #returnLink {
+      width: 100vw;
+      height: 10vh;
+      position: fixed;
+      z-index: 10;
+      top: 0;
+      left: 0;
+      display: flex;
+      align-items: center;
+      background-color: rgba(255, 255, 255, 0.575); }
+      body#galleryPage #returnLink a {
+        margin-left: 5vw;
+        font-size: 30px;
+        font-family: poiret one, sans-serif; }
+        body#galleryPage #returnLink a:link {
+          text-decoration: none;
+          color: black; }
+        body#galleryPage #returnLink a:visited {
+          text-decoration: none;
+          color: black; }
+    body#galleryPage #firstDivider {
+      margin-top: 10vh; }
+    body#galleryPage .divider {
+      width: 100vw;
+      height: 20vh;
+      display: flex;
+      position: relative;
+      font-family: poiret one, sans-serif;
+      font-size: 30px; }
+      body#galleryPage .divider p {
+        margin: auto; }
+    body#galleryPage #x {
+      width: 70px;
+      height: auto;
+      position: fixed;
+      top: 5vh;
+      right: 2vw;
+      z-index: 100;
+      display: none;
+      background-color: rgba(255, 255, 255, 0.541);
+      font-family: poiret one;
+      font-size: 80px;
+      font-weight: bolder;
+      cursor: pointer; }
+      body#galleryPage #x p {
+        margin: auto; }
+    body#galleryPage .arrow {
+      width: 50px;
+      height: 50px;
+      margin: auto;
+      display: relative;
+      transform-origin: center;
+      border-left: 5px solid #afafaf;
+      border-bottom: 5px solid #afafaf; }
+    body#galleryPage #leftArrowContainer {
+      width: 100px;
+      height: 120px;
+      left: 3vw;
+      bottom: 50vh;
+      z-index: 200;
+      display: none;
+      position: fixed;
+      background-color: rgba(114, 114, 114, 0.678);
+      cursor: pointer; }
+      body#galleryPage #leftArrowContainer .arrow {
+        transform: translateX(15px) rotate(45deg); }
+    body#galleryPage #rightArrowContainer {
+      width: 100px;
+      height: 120px;
+      right: 3vw;
+      bottom: 50vh;
+      z-index: 200;
+      display: none;
+      position: fixed;
+      background-color: rgba(114, 114, 114, 0.678);
+      cursor: pointer; }
+      body#galleryPage #rightArrowContainer .arrow {
+        transform: translateX(-15px) rotate(-135deg); }
+    @media screen and (max-width: 768px) {
+      body#galleryPage .arrow {
+        width: 25px;
+        height: 25px;
+        margin: auto;
+        display: relative;
+        transform-origin: center;
+        border-left: 3px solid #afafaf;
+        border-bottom: 3px solid #afafaf; }
+      body#galleryPage #leftArrowContainer {
+        width: 50px;
+        height: 60px;
+        left: 3vw;
+        bottom: 40vh;
+        z-index: 200;
+        display: none;
+        position: fixed;
+        background-color: rgba(114, 114, 114, 0.678);
+        cursor: pointer; }
+        body#galleryPage #leftArrowContainer .arrow {
+          transform: translateX(7px) rotate(45deg); }
+      body#galleryPage #rightArrowContainer {
+        width: 50px;
+        height: 60px;
+        right: 3vw;
+        bottom: 40vh;
+        z-index: 200;
+        display: none;
+        position: fixed;
+        background-color: rgba(114, 114, 114, 0.678);
+        cursor: pointer; }
+        body#galleryPage #rightArrowContainer .arrow {
+          transform: translateX(-7px) rotate(-135deg); }
+      body#galleryPage #x {
+        width: 50px;
+        height: auto;
+        position: fixed;
+        top: 5vh;
+        right: 2vw;
+        z-index: 100;
+        display: none;
+        background-color: rgba(255, 255, 255, 0.541);
+        font-family: poiret one;
+        font-size: 50px;
+        font-weight: bolder;
+        cursor: pointer; }
+        body#galleryPage #x p {
+          margin: auto; } }
+    body#galleryPage div.image.big {
+      width: 100vw;
+      height: 100vh;
+      z-index: 20;
+      box-sizing: content-box;
+      background-size: contain;
+      position: fixed;
+      background-color: rgba(46, 46, 46, 0.836);
+      border: none; }
+    body#galleryPage .image {
+      box-sizing: border-box;
+      border: 1px solid #cec4bc;
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      cursor: pointer; }
+    body#galleryPage .image.left {
+      width: 30vw;
+      height: 30vh; }
+    body#galleryPage .image.middle {
+      width: 40vw;
+      height: 30vh; }
+    body#galleryPage .image.right {
+      width: 30vw;
+      height: 30vh; }
+    body#galleryPage .image.bigLeft {
+      width: 50vw;
+      height: 50vh; }
+    body#galleryPage .image.bigRight {
+      width: 50vw;
+      height: 50vh; }
+    body#galleryPage #img1 {
+      background-image: url(TTCPictures/IMG_3450.jpg); }
+    body#galleryPage #img2 {
+      background-image: url(TTCPictures/IMG_3458.jpg); }
+    body#galleryPage #img3 {
+      background-image: url(TTCPictures/IMG_3796.jpg); }
+    body#galleryPage #img4 {
+      background-image: url(TTCPictures/IMG_3798.jpg); }
+    body#galleryPage #img5 {
+      background-image: url(TTCPictures/IMG_3826.jpg); }
+    body#galleryPage #img6 {
+      background-image: url(TTCPictures/IMG_3834.jpg); }
+    body#galleryPage #img7 {
+      background-image: url(TTCPictures/IMG_3860.jpg); }
+    body#galleryPage #img8 {
+      background-image: url(TTCPictures/IMG_3858.jpg); }
+    body#galleryPage #img9 {
+      background-image: url(TTCPictures/IMG_3787.jpg); }
+    body#galleryPage #img10 {
+      background-image: url(TTCPictures/IMG_3788.jpg); }
+    body#galleryPage #img11 {
+      background-image: url(TTCPictures/IMG_3791.jpg); }
+    body#galleryPage #img12 {
+      background-image: url(TTCPictures/IMG_3811.jpg); }
+    body#galleryPage #img13 {
+      background-image: url(TTCPictures/IMG_3812.jpg); }
+    body#galleryPage #img14 {
+      background-image: url(TTCPictures/IMG_3814.jpg); }
+    body#galleryPage #img15 {
+      background-image: url(TTCPictures/IMG_3813.jpg); }
+    body#galleryPage #img16 {
+      background-image: url(TTCPictures/IMG_3866.jpg); }
+    body#galleryPage #img17 {
+      background-image: url(TTCPictures/IMG_3877.jpg); }
+    body#galleryPage #img18 {
+      background-image: url(TTCPictures/IMG_3864.jpg); }
+    body#galleryPage #img19 {
+      background-image: url(TTCPictures/IMG_3821.jpg); }
+    body#galleryPage #img20 {
+      background-image: url(TTCPictures/IMG_3823.jpg); }
+    body#galleryPage #img21 {
+      background-image: url(TTCPictures/IMG_3420.jpg); }
+    body#galleryPage #img22 {
+      background-image: url(TTCPictures/IMG_3432.jpg); }
+    body#galleryPage #img23 {
+      background-image: url(TTCPictures/IMG_3472.jpg); }
+    body#galleryPage #img24 {
+      background-image: url(TTCPictures/IMG_3210.jpg); }
+    body#galleryPage #img25 {
+      background-image: url(TTCPictures/IMG_3213.jpg); }
+    body#galleryPage #img26 {
+      background-image: url(TTCPictures/totoro.jpg); }
+    body#galleryPage #img27 {
+      background-image: url(TTCPictures/IMG_4212.jpg); }
+    body#galleryPage #img28 {
+      background-image: url(TTCPictures/IMG_4167.jpg); }
+    body#galleryPage #img29 {
+      background-image: url(TTCPictures/IMG_3996.jpg); }
+    body#galleryPage #img30 {
+      background-image: url(TTCPictures/IMG_3779.jpg); }
+    body#galleryPage #img31 {
+      background-image: url(TTCPictures/IMG_3782.jpg); }
+    body#galleryPage #img32 {
+      background-image: url(TTCPictures/IMG_3646.jpg); }
+    body#galleryPage #img33 {
+      background-image: url(TTCPictures/IMG_3690.jpg); }
+    body#galleryPage #img34 {
+      background-image: url(TTCPictures/IMG_3582.jpg); }
+    body#galleryPage #img35 {
+      background-image: url(TTCPictures/IMG_3602.jpg); }
+  
+  /*# sourceMappingURL=TTC2019B.css.map */
+  

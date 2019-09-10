@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Tulip Tree Cottage</title>
+    <link rel='stylesheet' href='TulipTree2019Prefixed.css'>
+    <link href="https://fonts.googleapis.com/css?family=Fjalla+One|Arvo|Poppins|Montserrat|Open+Sans+Condensed:300|Amatic+SC|Merriweather|Josefin+Sans|Josefin+Slab|Montserrat+Alternates|Poiret+One|Questrial|Righteous" rel="stylesheet">
+</head>
+<body id='mainPage'>
+
+    <div id='backgroundImage'>
+        <a name='locationAnchor'></a>
+        <div class='imgContainer' id='imgContainer56'>
+            <div class='imageBorder'>
+                <div class='image' id='img5'></div>
+                <div class='image' id='img9'></div>
+            </div>
+            <div class='imageBorder'>
+                <div class='image' id='img6'></div>
+                <div class='image' id='img16'></div>
+            </div>
+        </div>
+        <a name='galleryAnchor'></a>
+        <div class='imgContainer' id='imgContainer12'>
+            <div class='imageBorder'>
+                <div class='image' id='img1'></div>
+                <div class='image' id='img12'></div>
+            </div>
+            <div class='imageBorder'>
+                <div class='image' id='img2'></div>
+                <div class='image' id='img15'></div>
+            </div>
+        </div>
+        <a name='aboutAnchor'></a>
+        <div class='imgContainer' id='imgContainer34'>
+            <div class='imageBorder'>
+                <div class='image' id='img3'></div>
+                <div class='image' id='img13'></div>
+            </div>
+            <div class='imageBorder'>
+                <div class='image' id='img14'></div>
+                <div class='image' id='img10'></div>
+            </div>
+        </div>
+        <a name='contactAnchor'></a>
+        <div class='imgContainer' id='imgContainer78'>
+            <div class='imageBorder'>
+                <div class='image' id='img7'></div>
+                <div class='image' id='img11'></div>
+            </div>
+            <div class='imageBorder'>
+                <div class='image' id='img8'></div>
+                <div class='image' id='img4'></div>
+            </div>
+        </div>
+    </div>
+
+    <div id='mobileTitle'>
+        <h1>Tulip Tree Cottage</h1>
+    </div>
+    <div id='menu'>
+        <a href='#aboutAnchor' onclick='backgroundToAbout()' class='menuItem' id='about'></a>
+        <a href='#locationAnchor' onclick='backgroundToLocation()' class='menuItem' id='location'></a>
+        <a href='#galleryAnchor' onclick='backgroundToGallery()' class='menuItem' id='gallery'></a>
+        <a href='#contactAnchor' onclick='backgroundToContact()' class='menuItem' id='contact'></a>
+        <div id='mobileMenuContainer'>
+            <a class='mobileMenuItem' href='#mobileAboutAnchor'></a>
+            <a class='mobileMenuItem' href='#mobileLocationAnchor'></a>
+            <a class='mobileMenuItem' href='TTC2019B_gallery.html'></a>
+            <a class='mobileMenuItem' href='#mobileContactAnchor'></a>
+        </div>
+        <div id='circleContainer'>
+            <div class='circle' id='AboutCircle'></div>
+            <div class='circle' id='LocationCircle'></div>
+            <div class='circle' id='GalleryCircle'></div>
+            <div class='circle' id='ContactCircle'></div>
+        </div>
+    </div>
+
+    <div id='bigCircleContainer'>
+        <div class='circle' id='bigAboutCircle'></div>
+        <div class='circle' id='bigLocationCircle'></div>
+        <div class='circle' id='bigGalleryCircle'></div>
+        <div class='circle' id='bigContactCircle'></div>
+    </div>
+
+    <div id='descriptionBackground'>
+        <a href='index.html' id='homeButton'>back to home &#8592; </a>
+        <div class='text show' id='welcomeText'>
+            <p>Welcome to</p>
+            <h1>Tulip Tree Cottage</h1>
+        </div>
+        <div class='text' id='aboutText'>
+            <a name='mobileAboutAnchor'></a>
+            <h2>About</h2>
+            <div class='aboutContainers' id='description'>
+                <div onclick='subMenu_desc()' class='title' id='descriptionTitle'>
+                    <p>Description</p>
+                    <div class='downArrow'></div>
+                </div>
+                <div class='aboutSubsections' id='descriptionText'>
+                    <p>
+                        Our beautifully furnished two bedroom mid-century cottage has two bedrooms, master bedroom has a queen bed and decorative fireplace, 
+                        second bedroom has two twin beds, one bathroom with shower, living room, dining space, 
+                        full kitchen with a minifridge and four acre forest with walking trail.
+                    </p>
+                </div>
+            </div>
+            <div class='aboutContainers' id='amenities'>
+                <div onclick='subMenu_amenities()' class='title' id='amenitiesTitle'>
+                    <p>Amenities</p>
+                    <div class='downArrow'></div>
+                </div>
+                <div class='aboutSubsections' id='amenitiesText'>
+                    <p>Essentials</p>
+                    <ul>
+                        <li>Wifi</li>
+                        <li>Air Conditioning</li>
+                        <li>Heating</li>
+                        <li>Towels & Bed Sheets</li>
+                        <li>Soap & Shampoo</li>
+                        <li>Free Parking</li>
+                    </ul>
+                    <p>Kitchen</p>
+                    <ul>
+                        <li>Coffee Maker</li>
+                        <li>Pots, Cooking Oil, Salt and Pepper</li>
+                        <li>Microwave</li>
+                        <li>Mini Refridgerator</li>
+                        <li>Oven and Stove</li>
+                    </ul>
+                    <p>Outdoors</p>
+                    <ul>
+                        <li>Outdoor Grill</li>
+                        <li>Furnished Patio</li>
+                        <li>Acres of Nature to Explore</li>
+                    </ul>
+                </div>
+            </div>
+            <div class='aboutContainers' id='rules'>
+                <div onclick='subMenu_rules()' class='title' id='rulesTitle'>
+                    <p>Rules and Policies</p>
+                    <div class='downArrow'></div>
+                </div>
+                <div class='aboutSubsections' id='rulesText'>
+                    <ul>
+                        <li>Check-in anytime after 4PM EST</li>
+                        <li>Check out by 11AM EST</li>
+                        <li>No smoking</li>
+                        <li>No pets</li>
+                        <li>No parties or social events</li>
+                    </ul>
+                    <p>
+                        No pets and no smoking inside or outside on the premises. 
+                        Permission is required from the Host for any additional visitors who visit the Guest, house or property at any time. 
+                        If Visitors visit the Guests, house or property without permission from the Host, the Guest will be charged $100 per visitor, per day. 
+                        Security cameras are outside overlooking property for your safety.
+                        <br/><br/>
+                        Security Deposit - if you damage the home, you may be charged up to $500
+                    </p>
+                </div>
+            </div>
+        </div>
+        
+        <div id='backgroundImage'>
+            <div class='imgContainer' id='imgContainer56'>
+                <div class='imageBorder'>
+                    <div class='image' id='img5'></div>
+                    <div class='image' id='img9'></div>
+                </div>
+                <div class='imageBorder'>
+                    <div class='image' id='img6'></div>
+                    <div class='image' id='img16'></div>
+                </div>
+            </div>
+            <div class='imgContainer' id='imgContainer34'>
+                <div class='imageBorder'>
+                    <div class='image' id='img3'></div>
+                    <div class='image' id='img13'></div>
+                </div>
+                <div class='imageBorder'>
+                    <div class='image' id='img14'></div>
+                    <div class='image' id='img10'></div>
+                </div>
+            </div>
+            <div class='imgContainer' id='imgContainer78'>
+                <div class='imageBorder'>
+                    <div class='image' id='img7'></div>
+                    <div class='image' id='img11'></div>
+                </div>
+                <div class='imageBorder'>
+                    <div class='image' id='img8'></div>
+                    <div class='image' id='img4'></div>
+                </div>
+            </div>
+        </div>
+
+        <div class='text' id='galleryText'>
+            <a name='mobileGalleryAnchor'></a>
+            <a href='TTC2019B_gallery.html'>
+                Click <span style='color:rgb(255, 102, 102); text-shadow:none;'>here</span> to explore Tulip Tree Cottage
+            </a>
+        </div>
+        <div class='text' id='locationText'>
+                <a name='mobileLocationAnchor'></a>
+            <h2>Location</h2>
+            <div id='map'>
+                <iframe width="95%" height="90%" id="gmap_canvas" src="https://maps.google.com/maps?q=Lakeside%20Michigan&t=&z=11&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+            </div>
+            <p>
+                We love the neighborhood with large lots near Lake Michigan. It is safe and private, two blocks away from the Pier street beach
+                The Harbor Counrty Lakeshore Trail is right infront of the house. You do need a car or a bike to get to most restaurant & shops.
+                Everything you could need is a few minutes drive from the cottage.
+            </p>
+            <p>
+                Tulip Tree Cottage is on four acres of woods located two 
+                blocks from lovely Lake Michigan beaches 
+                and minutes from Union Pier, New Buffalo, Harbert, Sawyer, Three Oaks and one hour fifteen minutes from Downtown Chicago
+            </p>
+        </div>
+        <div class='text' id='contactText'>
+            <a name='mobileContactAnchor'></a>
+            <h2>Booking</h2>
+            <p id='contactInfo'>
+                tuliptree@comcast.co 
+                <br>
+                123-456-7890
+            </p>
+            <p>
+                Or... 
+                <br>
+                Send us your information and we'll get back to you as soon as possible
+            </p>
+            <form>
+                <input type='text' id='fullName' autocomplete="off" placeholder="Full Name">
+                <input type='text' id='emailAddress' autocomplete="off" placeholder="Email Address">
+                <input type='text' id='phoneNumber' autocomplete="off" placeholder="Phone Number">
+                <br>
+                <input type='submit' value='send'>
+            </form>
+        </div>
+    </div>
+
+    <div id='mobileFooter'></div>
+</body>
+<script>
+var iconArray = document.getElementsByClassName('menuItem');
+var menuBackground = document.getElementById('menu');
+
+//define variables for all the circles that grow on transition
+var aboutCircle = document.getElementById('AboutCircle');
+var bigAboutCircle = document.getElementById('bigAboutCircle');
+var locationCircle = document.getElementById('LocationCircle');
+var bigLocationCircle = document.getElementById('bigLocationCircle');
+var galleryCircle = document.getElementById('GalleryCircle');
+var bigGalleryCircle = document.getElementById('bigGalleryCircle');
+var contactCircle = document.getElementById('ContactCircle');
+var bigContactCircle = document.getElementById('bigContactCircle');
+var circleContainer = document.getElementById('circleContainer');
+var bigCircleContainer = document.getElementById('bigCircleContainer');
+//define variable for the nodelist of all circle objects
+var circleArray = document.getElementsByClassName('circle');
+
+//define variables for all the text that is animated
+var welcomeText = document.getElementById('welcomeText');
+var aboutText = document.getElementById('aboutText');
+var galleryText = document.getElementById('galleryText');
+var locationText = document.getElementById('locationText');
+var contactText = document.getElementById('contactText');
+
+//define variables for the about section sub-menus 
+var descriptionText = document.getElementById('descriptionText');
+var amenitiesText = document.getElementById('amenitiesText');
+var rulesText = document.getElementById('rulesText');
+
+//make a variable for the 'return to home' button
+var home = document.getElementById('homeButton');
+function subMenu_desc() {
+    if(descriptionText.classList == 'aboutSubsections'){
+        descriptionText.classList.add('showSubsections');
+        amenitiesText.classList.remove('showSubsections');
+        rulesText.classList.remove('showSubsections');
+    }else{
+        descriptionText.classList.remove('showSubsections');
+    }
+}
+function subMenu_amenities() {
+    if(amenitiesText.classList == 'aboutSubsections'){
+        descriptionText.classList.remove('showSubsections');
+        amenitiesText.classList.add('showSubsections');
+        rulesText.classList.remove('showSubsections');
+    }else{
+        amenitiesText.classList.remove('showSubsections');
+    }
+}
+function subMenu_rules() {
+    if(rulesText.classList == 'aboutSubsections'){
+        descriptionText.classList.remove('showSubsections');
+        amenitiesText.classList.remove('showSubsections');
+        rulesText.classList.add('showSubsections');
+    }else{
+        rulesText.classList.remove('showSubsections');
+    }
+}
+function backgroundToAbout(){
+    //shrink the currently selected cirlce to ensure the animation plays if selected again 
+    aboutCircle.classList.remove('grow');
+    //move the currently selected circle to the end of the circleContainer object. Making it the last index in the nodelist
+    circleContainer.appendChild(aboutCircle);
+    //loop through and assign all circles a z-index according to their index in the circleContainer nodelist
+    for(i=0; i<4; i++){
+        circleArray[i].style.zIndex = i;
+    }
+    //make the currectly selected circle grow (must use timeout because appending and classList assignment cannot be done in the same round)
+    setTimeout(function(){aboutCircle.classList.add('grow');}, 0);
+
+    //do the same thing again for the larger background circle
+    bigAboutCircle.classList.remove('grow');
+    bigCircleContainer.appendChild(bigAboutCircle);
+    for(i=0; i<4; i++){
+        circleArray[i].style.zIndex = i;
+    }
+    setTimeout(function(){bigAboutCircle.classList.add('grow');}, 0);
+
+    //pull up the relevant text
+    aboutText.classList = 'show text';
+    galleryText.classList = 'text';
+    locationText.classList = 'text';
+    contactText.classList = 'text';
+    welcomeText.classList = 'text';
+    //display 'return to home' button
+    home.classList = 'showHomeButton';
+};
+function backgroundToLocation(){
+    locationCircle.classList.remove('grow');
+    circleContainer.appendChild(locationCircle);
+    for(i=0; i<4; i++){
+        circleArray[i].style.zIndex = i;
+    }
+    setTimeout(function(){locationCircle.classList.add('grow');}, 0);
+    
+    bigLocationCircle.classList.remove('grow');
+    bigCircleContainer.appendChild(bigLocationCircle);
+    for(i=0; i<4; i++){
+        circleArray[i].style.zIndex = i;
+    }
+    setTimeout(function(){bigLocationCircle.classList.add('grow');}, 0);
+
+    aboutText.classList = 'text';
+    galleryText.classList = 'text';
+    locationText.classList = 'show text';
+    contactText.classList = 'text';
+    welcomeText.classList = 'text';
+    home.classList = 'showHomeButton';
+};
+function backgroundToGallery(){
+    galleryCircle.classList.remove('grow');
+    circleContainer.appendChild(galleryCircle);
+    for(i=0; i<4; i++){
+        circleArray[i].style.zIndex = i;
+    }
+    setTimeout(function(){galleryCircle.classList.add('grow');}, 0);
+    
+    bigGalleryCircle.classList.remove('grow');
+    bigCircleContainer.appendChild(bigGalleryCircle);
+    for(i=0; i<4; i++){
+        circleArray[i].style.zIndex = i;
+    }
+    setTimeout(function(){bigGalleryCircle.classList.add('grow');}, 0);
+
+    aboutText.classList = 'text';
+    galleryText.classList = 'show text';
+    locationText.classList = 'text';
+    contactText.classList = 'text';
+    welcomeText.classList = 'text';
+    home.classList = 'showHomeButton';
+};
+function backgroundToContact(){
+    contactCircle.classList.remove('grow');
+    circleContainer.appendChild(contactCircle);
+    for(i=0; i<4; i++){
+        circleArray[i].style.zIndex = i;
+    }
+    setTimeout(function(){contactCircle.classList.add('grow');}, 0);
+    
+    bigContactCircle.classList.remove('grow');
+    bigCircleContainer.appendChild(bigContactCircle);
+    for(i=0; i<4; i++){
+        circleArray[i].style.zIndex = i;
+    }
+    setTimeout(function(){bigContactCircle.classList.add('grow');}, 0);
+
+    aboutText.classList = 'text';
+    galleryText.classList = 'text';
+    locationText.classList = 'text';
+    contactText.classList = 'show text';
+    welcomeText.classList = 'text';
+    home.classList = 'showHomeButton';
+};
+</script>
+</html>

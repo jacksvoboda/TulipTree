@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Tulip Tree Cottage</title>
+    <link rel='stylesheet' href='TulipTree2019Prefixed.css'>
+    <link href="https://fonts.googleapis.com/css?family=Poiret+One" rel="stylesheet">
+</head>
+<body id='galleryPage'>
+    <div id='returnLink'><a href='index.html'>Home</a></div>
+    <div onclick='minimize()' id='x'>
+        <p>X</p>
+    </div>
+    <div onclick='cycleImgLeft()' id='leftArrowContainer'><div class='arrow'></div></div>
+    <div onclick='cycleImgRight()' id='rightArrowContainer'><div class='arrow'></div></div>
+    <div id='firstDivider' class='divider'>
+        <p>Living Room</p>
+    </div>
+    <div id='img1' class='image left'></div>
+    <div id='img2' class='image middle'></div>
+    <div id='img3' class='image right'></div>
+    <div id='img4' class='image bigLeft'></div>
+    <div id='img5' class='image bigRight'></div>
+    <div id='img6' class='image left'></div>
+    <div id='img7' class='image middle'></div>
+    <div id='img8' class='image right'></div>
+    <div class='divider'>
+        <p>Bedrooms</p>
+    </div>
+    <div id='img9' class='image bigLeft'></div>
+    <div id='img10' class='image bigRight'></div>
+    <div id='img11' class='image left'></div>
+    <div id='img12' class='image middle'></div>
+    <div id='img13' class='image right'></div>
+    <div id='img14' class='image bigLeft'></div>
+    <div id='img15' class='image bigRight'></div>
+    <div id='img16' class='image left'></div>
+    <div id='img17' class='image middle'></div>
+    <div id='img18' class='image right'></div>
+    <div class='divider'>
+        <p>kitchen & bathroom</p>
+    </div>
+    <div id='img19' class='image bigLeft'></div>
+    <div id='img20' class='image bigRight'></div>
+    <div id='img21' class='image left'></div>
+    <div id='img22' class='image middle'></div>
+    <div id='img23' class='image right'></div>
+    <div class='divider'>
+        <p>Outdoors</p>
+    </div>
+    <div id='img24' class='image bigLeft'></div>
+    <div id='img25' class='image bigRight'></div>
+    <div id='img26' class='image left'></div>
+    <div id='img27' class='image middle'></div>
+    <div id='img28' class='image right'></div>
+    <div id='img29' class='image bigLeft'></div>
+    <div id='img30' class='image bigRight'></div>
+    <div id='img31' class='image left'></div>
+    <div id='img32' class='image middle'></div>
+    <div id='img33' class='image right'></div>
+    <div id='img34' class='image bigLeft'></div>
+    <div id='img35' class='image bigRight'></div>
+</body>
+<script>
+//use the for loop + id method to make it so that clicking on an image brings up an enlargened version of the selected image
+//***will have to extract the id using the 'this' keyword, then turn it into a number and use it to identify an element in an array of those images
+var imgArray = document.getElementsByClassName('image');
+var x = document.getElementById('x');
+var leftArrow = document.getElementById('leftArrowContainer');
+var rightArrow = document.getElementById('rightArrowContainer');
+var currentIndex = 0;
+for(i=0; i<imgArray.length; i++){
+    imgArray[i].onclick = function(){
+        currentIndex = this.id;
+        console.log(currentIndex);
+        currentIndex = parseInt(currentIndex.substr(3)) - 1;
+        console.log(currentIndex);
+        console.log(imgArray[currentIndex]);
+        imgArray[currentIndex].classList.add('big');
+        x.style.display = 'flex';
+        leftArrow.style.display = 'flex';
+        rightArrow.style.display = 'flex';
+    }
+};
+
+function cycleImgRight(){
+    //use a conditional to loop the next image button back to the first image when the user passes the last image
+    if(currentIndex >= 34){
+        imgArray[34].classList.remove('big');
+        imgArray[0].classList.add('big');
+        currentIndex = 0;
+    }else{
+        imgArray[currentIndex].classList.remove('big');
+        currentIndex = currentIndex + 1;
+        imgArray[currentIndex].classList.add('big');
+    }
+}
+function cycleImgLeft(){
+    if(currentIndex <= 0){
+        imgArray[0].classList.remove('big');
+        imgArray[34].classList.add('big');
+        currentIndex = 34;
+    }else{
+        imgArray[currentIndex].classList.remove('big');
+        currentIndex = currentIndex - 1;
+        imgArray[currentIndex].classList.add('big');
+    }
+}
+
+function minimize(){
+    let currentImage = document.getElementsByClassName('big');
+    currentImage[0].classList.remove('big');
+    x.style.display = 'none';
+        leftArrow.style.display = 'none';
+        rightArrow.style.display = 'none';
+}
+
+
+///////////////////Lets add a couple bewttons that will allow you to cycle through all the photos while one is enlarged/////////////////////////
+
+</script>
+</html>
